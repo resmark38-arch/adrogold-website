@@ -3,55 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdroGold - TG Аккаунты</title>
+    <title>AdroGold - Покупай TG аккаунты качественно</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            background: #0c0c0c;
-            color: white;
-            font-family: Arial;
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .hero {
             text-align: center;
-            padding: 50px 20px;
+            padding: 100px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            margin-bottom: 60px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
+
         h1 {
-            color: #bb86fc;
-            font-size: 2.5em;
-            margin-bottom: 40px;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #bb86fc, #03dac6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
+
         .guarantees {
-            max-width: 600px;
-            margin: 0 auto 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
         }
-        .guarantee-item {
-            background: rgba(255,255,255,0.1);
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
+
+        .guarantee-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .contact {
-            margin: 40px 0;
-            font-size: 1.2em;
+
+        .guarantee-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(187, 134, 252, 0.3);
         }
+
+        .guarantee-icon {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #bb86fc;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 60px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            margin: 60px 0;
+        }
+
         .email {
+            font-size: 1.3em;
             color: #03dac6;
-            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Покупай TG аккаунты у нас качественно!</h1>
-    
-    <div class="guarantees">
-        <h2>Гарантии</h2>
-        <div class="guarantee-item">✓ Предоставляем замену</div>
-        <div class="guarantee-item">✓ Без спамблока и заморозки</div>
-        <div class="guarantee-item">✓ Работаем честно</div>
+    <div class="container">
+        <section class="hero">
+            <h1>Покупай TG аккаунты у нас качественно!</h1>
+            <p style="font-size: 1.3em; opacity: 0.9;">Премиум аккаунты без блокировок и проверок</p>
+        </section>
+
+        <section class="guarantees">
+            <div class="guarantee-card">
+                <div class="guarantee-icon">🛡️</div>
+                <h3>Предоставляем замену</h3>
+                <p>Гарантия замены аккаунта в течение 24 часов при любых проблемах</p>
+            </div>
+            
+            <div class="guarantee-card">
+                <div class="guarantee-icon">✅</div>
+                <h3>Без спамблока и заморозки</h3>
+                <p>Все аккаунты проходят проверку и полностью чистые</p>
+            </div>
+            
+            <div class="guarantee-card">
+                <div class="guarantee-icon">⚡</div>
+                <h3>Работаем честно</h3>
+                <p>Прозрачные условия и честные цены без скрытых платежей</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Вопросы? Пишите в поддержку</h2>
+            <div class="email">BlackHeadtg@gmail.com</div>
+        </section>
     </div>
-    
-    <div class="contact">
-        <p>Вопросы? Пишите в поддержку</p>
-        <p class="email">BlackHeadtg@gmail.com</p>
-    </div>
-    
-    <footer>adrogold.xyz</footer>
+
+    <footer>
+        <div class="container">
+            <p>adrogold.xyz © 2024</p>
+        </div>
+    </footer>
 </body>
 </html>
